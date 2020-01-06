@@ -5,7 +5,7 @@ type Value = { prop: any };
 type Property = {};
 const prop1: Property = {}, prop2: Property = {};
 const value1: Value = { prop: prop1 }, value2: Value = { prop: prop2 };
-const result = {};
+const result = 42;
 
 describe(`Comparator: ${PropertyComparator.name}`, () => {
     let comparator: PropertyComparator<any, any>;

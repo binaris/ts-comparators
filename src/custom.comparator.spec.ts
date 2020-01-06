@@ -36,7 +36,7 @@ describe(`Comparator: ${CustomComparator.name}`, () => {
     });
 
     it('returns value from compareFn when object', () => {
-        let result = {};
+        let result = 42;
         spyCompare.and.returnValue(result);
 
         expect(comparator.compare(value1, value2)).toBe(result);

@@ -1,7 +1,7 @@
 import { Comparator } from './comparator';
 import { ValueComparator } from './value.comparator';
 
-const value1 = {}, value2 = {}, newValue1 = {}, newValue2 = {}, result = {};
+const value1 = {}, value2 = {}, newValue1 = {}, newValue2 = {}, result = 42;
 
 describe(`Comparator: ${ValueComparator.name}`, () => {
     let comparator: ValueComparator<any, any>;
