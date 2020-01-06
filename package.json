@@ -1,6 +1,6 @@
 {
-  "name": "ts-comparators",
-  "version": "1.0.0",
+  "name": "@binaris/ts-comparators",
+  "version": "1.0.1",
   "description": "A set of comparators written in TypeScript",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
