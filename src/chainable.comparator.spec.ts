@@ -41,7 +41,7 @@ describe(`Comparator: ${ChainableComparator.name}`, () => {
         });
 
         it('returns the comparator value when any object', () => {
-            const returnValue = {};
+            const returnValue = 42;
             spiedCompare.and.returnValue(returnValue);
 
             expect(reversedComparator.compare(value1, value2)).toBe(returnValue);
@@ -117,7 +117,7 @@ describe(`Comparator: ${ChainableComparator.name}`, () => {
 
         it('returns the comparator value when any object', () => {
             spiedCompare.and.returnValue(0);
-            const returnValue = {};
+            const returnValue = 42;
             spiedSecondCompare.and.returnValue(returnValue);
 
             expect(chainedComparator.compare(value1, value2)).toBe(returnValue);

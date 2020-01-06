@@ -2,7 +2,7 @@ import { StringComparator } from './string.comparator';
 import { commonNullTests } from './common-tests';
 
 const value1 = 'value1', value2 = 'value2';
-const result = {};
+const result = 42;
 
 describe(`Comparator: ${StringComparator.name}`, () => {
     let originalIntl: any;
