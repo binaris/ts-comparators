@@ -2,7 +2,7 @@ import { Comparator } from './comparator';
 import { ChainableComparator } from './chainable.comparator';
 
 export class ValueComparator<T, V> extends ChainableComparator<T> {
-    constructor(private valueGetterGetter: (T) => V, private comparator: Comparator<V>) {
+    constructor(private valueGetterGetter: (value: T) => V, private comparator: Comparator<V>) {
         super();
     }
 
